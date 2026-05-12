@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+.backgroundContainer {
+    background-color: oklch(19.1% 0.0043 264.47deg);
+}
+.backgroundContainer.withBackdrop {
+    background: transparent !important;
+}
+
+.backdropContainer {
+    filter: blur(25px) brightness(50%) saturate(110%) contrast(110%);
+    margin-left: -25px;
+    margin-top: -25px;
+    width: calc(100vw + 50px);
+    height: calc(100vh + 50px);
+}
+
+.withTabs .content-primary {
+    padding-top: 1em !important;
+}
+
+.scrollY {
+    mask-image: linear-gradient(to bottom, transparent, black 1em calc(100% - 1em), transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 1em calc(100% - 1em), transparent);
+    padding: 1em 0;
+}
+
+.pageTabContent {
+    padding: 0 1em;
+}
+
+.appfooter {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(30px);
+}
+
+::selection {
+    background: oklch(70.36% 0.1802 49.19deg);
+}
+
+.emby-scrollbuttons {
+    -webkit-align-items: center;
+    align-items: center;
+    color: oklch(70.36% 0.1802 49.19deg);
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    min-height: 24px;
+    min-width: 104px;
+    padding-top: 0.85em;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+[dir=ltr] .emby-scrollbuttons {
+    right: 0;
+}
+
+[dir=rtl] .emby-scrollbuttons {
+    left: 0;
+}
+
+.emby-scrollbuttons-button > .material-icons {
+    display: block;
+    min-height: 24px;
+    min-width: 24px;
+}
+
+.countIndicator {
+    background: oklch(70.36% 0.1802 49.19deg);
+}
+
+.playedIndicator {
+    background: oklch(70.36% 0.1802 49.19deg);
+}
+
+.pageTitle.pageTitleWithLogo.pageTitleWithDefaultLogo {
+    background-image: url("https://github.com/rugerdutton/duttfin/blob/main/src/assets/duttfin.svg?raw=true");
+}
+
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
+    background: oklch(19.1% 0.0043 264.47deg / 0.7);
+}
+
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+    background: oklch(19.1% 0.0043 264.47deg / 0.7);
+}
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, oklch(70.36% 0.1802 49.19deg) 0%, oklch(70.36% 0.1802 49.19deg) 25%, oklch(70.36% 0.1404 169.19deg) 25%, oklch(70.36% 0.1404 169.19deg) 50%, oklch(51.64% 0.277 289.37deg) 50%, oklch(51.64% 0.277 289.37deg) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.headerSyncButton {
+    display: none;
+}
+
+.layout-desktop .headerCastButton {
+    display: none;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-family: "Montserrat", "Inter", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */
